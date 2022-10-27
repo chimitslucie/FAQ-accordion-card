@@ -1,27 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-  
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --hover: #f47b56;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     max-width: 100%;
-  }
-  
-  html,
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-  }
+}
 
-  body {
+html,
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
     width: 100vw;
     height: 100vh;
-  }
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    max-width: 920px;
+    border-radius: 23px;
+}
+
+.card__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 65px 0 43px 0;
+}
+
+.question__title {
+    margin-bottom: 19px;
+}
+
+.card__question-title {
+    text-decoration: none;
+    color: var(--very-dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__question-arrow {
+    width: 8px;
+    height: 4px;
+}
+
+.card__question-text {
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
